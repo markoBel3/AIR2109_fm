@@ -65,7 +65,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.markoBel3'
                 artifactId = 'AIR2109_fm'
-                version = '1.2'
+                version = '1.3'
             }
         }
     }
