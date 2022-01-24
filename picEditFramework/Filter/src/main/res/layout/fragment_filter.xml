@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filter_preview_bar"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/darker_gray">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filtersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_container" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filter_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/filter_cancel"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/cancel"
+            android:src="@drawable/cancel_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/filters"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/filter_accept"
+            app:layout_constraintStart_toEndOf="@+id/filter_cancel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/filter_accept"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/accept"
+            android:src="@drawable/accept_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

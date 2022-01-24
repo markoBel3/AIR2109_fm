@@ -1,1 +1,3 @@
-# AIR2109_fm
+# AIR2109
+
+Test application for PicEdit Framework.

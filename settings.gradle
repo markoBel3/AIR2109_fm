@@ -1,0 +1,21 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "TestApp"
+include ':app'
+include ':picEditFramework'
+include ':picEditFramework:RotateFlip'
+include ':picEditFramework:picEditView'
+include ':picEditFramework:Filter'
+include ':picEditFramework:ExportModule'
+include ':picEditFramework:Stickers'
+include ':picEditFramework:Crop'
+include ':picEditFramework:Tool'
+include ':picEditFramework:Pen'
+include ':picEditFramework:Text'

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="fonts">Fonts</string>
+    <string name="color">Color</string>
+    <string name="confirm">Confirm</string>
+    <string name="background_color">Background color</string>
+</resources>

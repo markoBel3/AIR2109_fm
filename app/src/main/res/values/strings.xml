@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="title_activity_picture_confirm">PictureConfirmActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="img_confirm">Confirm</string>
+    <string name="img_cancel">Cancel</string>
+</resources>

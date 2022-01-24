@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    tools:context=".StickersOptions">
+
+    <LinearLayout
+        android:id="@+id/layoutSubmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/grey_3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutFooter"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sticker_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/stickers_add_icon"/>
+            <TextView
+                android:id="@+id/sticker_add_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sticker_add"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="@string/add"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sticker_emoji"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/stickers_emoji_icon" />
+            <TextView
+                android:id="@+id/sticker_emoji_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sticker_emoji"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="@string/emoji"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sticker_meme"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:src="@drawable/stickers_meme_icon" />
+            <TextView
+                android:id="@+id/sticker_meme_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sticker_meme"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="@string/meme"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sticker_shapes"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/stickers_shapes_icon" />
+            <TextView
+                android:id="@+id/sticker_shapes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sticker_shapes"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="@string/shapes"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sticker_widget"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/stickers_widgets_icon" />
+            <TextView
+                android:id="@+id/sticker_widget_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sticker_widget"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="@string/widgets"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray_1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exit_image"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:src="@drawable/cancel_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/stickers"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/save_image"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:src="@drawable/confirm_icon" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ImportScreen">
+
+
+    <RelativeLayout
+        android:id="@+id/container_with_dotted_border"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginVertical="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dashed_border"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/image_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageConfirm"
+            android:layout_marginTop="-30dp"
+            android:alpha=".30"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Add photo"
+
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginHorizontal="10dp"
+        android:paddingTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/container_with_dotted_border">
+
+        <!--Obrisat padding vertical poslije-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Camera_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"
+            android:background="@color/menu_grey"
+            android:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:text="Camera"
+            android:drawableLeft="@drawable/camera_add"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Gallery_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"
+            android:background="@color/menu_grey"
+            android:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:text="Gallery"
+            android:drawableLeft="@drawable/gallery_add"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
